@@ -7,7 +7,7 @@ Features
 	•	Multi‐mode transport: diesel/electric trains and trucks, handling fees, insurance vs. private security
 	•	Infrastructure CapEx and OpEx amortization, depreciation, and maintenance
 	•	5‐year cash‐flow projections, NPV, and probability‐weighted expected‐value analysis
-	•	Sensitivity sweeps (Year 1 profit and full 5-year NPV) over price and demand
+	•	Sensitivity sweeps (Year 1 profit and full 5‑year NPV) over price and demand
 	•	Monte Carlo simulation of price volatility scenarios
 
 Prerequisites
@@ -38,14 +38,14 @@ This will:
 	•	Perform sensitivity sweeps and Monte Carlo simulation
 
 Project Structure
-	•	Program.cs — Main entry: grid setup, scenario loops, reporting
-	•	GridCell.cs — Defines terrain, risk, costs, and adjacency logic
-	•	RoutePlanner.cs — Wrapper for A* search pathfinding
-	•	RouteCostCalculator.cs — Aggregates per-ton cost calculation
-	•	TransportModels.cs — Defines transport modes, spec lookup
-	•	ProductionSchedule.cs — Holds per-year production targets & prices
-	•	FinancialModel.cs — (If used) encapsulates cash-flow & NPV logic
-	•	RouteFinder.Tests/ — Unit tests for core algorithms (xUnit)
+	•	Program.cs — Main entry: grid setup, scenario loops, reporting
+	•	GridCell.cs — Defines terrain, risk, costs, and adjacency logic
+	•	RoutePlanner.cs — Wrapper for A* search pathfinding
+	•	RouteCostCalculator.cs — Aggregates per‑ton cost calculation
+	•	TransportModels.cs — Defines transport modes, spec lookup
+	•	ProductionSchedule.cs — Holds per‑year production targets & prices
+	•	FinancialModel.cs — (If used) encapsulates cash‑flow & NPV logic
+	•	RouteFinder.Tests/ — Unit tests for core algorithms (xUnit)
 
 Running Tests
 
@@ -65,15 +65,61 @@ Please adhere to the existing coding style and include unit tests for new functi
 
 .gitignore
 
-A sample .gitignore for C#/.NET:
+A sample .gitignore for C#/.NET projects:
 
-# Build artifacts
-dotnet_*.dll
+# Build directories
 bin/
 obj/
+
+# User-specific files
 *.user
-*.vs/
+*.suo
+*.userosscache
+*.sln.docstates
 
-License
+# Visual Studio Code settings
+.vscode/
 
-This project is released under the MIT License. See LICENSE for details.
+# Rider settings
+.idea/
+
+# Visual Studio files
+*.vcxproj.filters
+*.vcxproj.user
+*.csproj.user
+
+# Package directories
+*.nuget/
+
+# Test result files
+TestResults/
+
+# DotNet watch files
+.dotnetwatch
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+Sharing Without GitHub Accounts
+
+If your teammates don’t have GitHub accounts or you need to share a snapshot of the repo, you can create a Git bundle (full history) or a ZIP archive:
+
+1. Git Bundle
+
+# Create a bundle of all branches and tags
+git bundle create RouteFinder.bundle --all
+
+Send RouteFinder.bundle via email or file‑share. Teammates can clone it:
+
+git clone RouteFinder.bundle -b main RouteFinderCopy
+
+2. ZIP Archive
+
+# Create a zip of the main branch
+git archive --format=zip --output=RouteFinder.zip main
+
+Share RouteFinder.zip. Teammates can unzip and get the snapshot without Git history.
