@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "dcmD9U9ocPM=",
+  "success": true,
+  "projectFilePath": "/Users/davidg/developmentEWC/RouteFinder/RouteFinder.csproj",
+  "expectedPackageFiles": [
+    "/Users/davidg/.nuget/packages/xunit/2.9.3/xunit.2.9.3.nupkg.sha512",
+    "/Users/davidg/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
+    "/Users/davidg/.nuget/packages/xunit.analyzers/1.18.0/xunit.analyzers.1.18.0.nupkg.sha512",
+    "/Users/davidg/.nuget/packages/xunit.assert/2.9.3/xunit.assert.2.9.3.nupkg.sha512",
+    "/Users/davidg/.nuget/packages/xunit.core/2.9.3/xunit.core.2.9.3.nupkg.sha512",
+    "/Users/davidg/.nuget/packages/xunit.extensibility.core/2.9.3/xunit.extensibility.core.2.9.3.nupkg.sha512",
+    "/Users/davidg/.nuget/packages/xunit.extensibility.execution/2.9.3/xunit.extensibility.execution.2.9.3.nupkg.sha512"
+  ],
+  "logs": []
+}
